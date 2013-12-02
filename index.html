@@ -1,0 +1,74 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html, charset=utf-8">
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<meta content="width-device-width, minimum-scale=1, maximum-scale=1" name="viewport">-->
+	<meta name="viewport" content="height=device-height,width=device-width,initial-scale=1.0,maximum-scale=1.0" >
+	<title>Phonegap Application</title> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+	<!--<link rel="stylesheet" href="css/odata_service.css">-->
+</head> 
+
+	
+<body id="id_load"> 
+
+<!-- Start of first page: #one -->
+<div data-role="page" id="one">
+
+	<div data-role="header">
+		<h1>Services</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" >	
+		<h2>Click on below button to Consume OData service</h2>
+		<!--<input type="button" id="products" value="Products"/>-->
+		<p><a href="#" name="products" data-role="button" class="submitbutton">Products</a></p>	
+		<p><a href="#" name="advertisements" data-role="button" class="submitbutton">Advertisements</a></p>
+		<p><a href="#" name="categories" data-role="button" class="submitbutton">Categories</a></p>
+		<p><a href="#" name="suppliers" data-role="button" class="submitbutton">Suppliers</a></p>
+		<input type="hidden" name="visit" id="visit" value="" />
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-theme="d">
+		<h4>@Copyright 2013 Hp</h4>
+	</div><!-- /footer -->
+</div><!-- /page one -->
+
+<!-- Start of second page: #two -->
+<div data-role="page" id="two" data-theme="a">
+
+	<div data-role="header">
+		<h1>Showing Result</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">	
+		<!--<p><a href="#one" data-direction="reverse" data-role="button" data-theme="b">Back to selection page</a></p>-->
+		
+		<p><a href="#"  data-role="button" data-theme="b" class="returnback">Back to selection page</a></p>
+		<br></br>
+		<p> <h4 id="StatusDiv"></h4></p>
+	
+		<!-- <table border="1" id="result_data">
+			
+		</table> -->
+		<!--  
+		<ul data-role="listview" id="resultList">
+		</ul>  -->
+			<table data-role="table" class="ui-responsive table-stroke" id="result_data" border="2">
+		
+		</table>
+	</div><!-- /content -->
+	
+	<div data-role="footer">
+		<h4>@Copyright 2013 Hp</h4>
+	</div><!-- /footer -->
+</div><!-- /page two -->
+
+<script src="n_odata.js"></script>
+
+</body>
+</html>
